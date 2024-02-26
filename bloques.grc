@@ -302,7 +302,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    amp: '1'
+    amp: '3'
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -313,7 +313,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [240, 392.0]
+    coordinate: [256, 392.0]
     rotation: 0
     state: enabled
 - name: blocks_add_xx_0
@@ -452,7 +452,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [744, 232.0]
+    coordinate: [744, 176.0]
     rotation: 0
     state: true
 - name: media

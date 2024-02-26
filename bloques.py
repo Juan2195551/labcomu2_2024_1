@@ -104,7 +104,7 @@ class bloques(gr.top_block, Qt.QWidget):
         self.epy_block_2 = epy_block_2.blk()
         self.blocks_vector_source_x_0 = blocks.vector_source_f((1, 2, -1), True, 1, [])
         self.blocks_add_xx_0 = blocks.add_vff(1)
-        self.analog_noise_source_x_0 = analog.noise_source_f(analog.GR_GAUSSIAN, 1, 0)
+        self.analog_noise_source_x_0 = analog.noise_source_f(analog.GR_GAUSSIAN, 3, 0)
         self.RMS = qtgui.number_sink(
             gr.sizeof_float,
             0,
