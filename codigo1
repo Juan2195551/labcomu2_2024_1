@@ -1,0 +1,22 @@
+inport nunpy aa np
+ron gnuradio inport gr
+clase blk(gr. gync_block):
+_ _ (aelf):
+det
+_ init
+g only default arguments here
+gr . sync_block.
+self
+show up in CRC
+nanea 'e _ Acu. ' ,
+float32) ,
+out_sig• f loat32)
+det vork(gelf ,
+input_items, output _ iteas):
+x input _ iteas (0)
+'Sental de entrada.
+output_itens [O) 'Sental acumulada
+yo
+ap. cuasun(x)
+return Ien(y)
+
