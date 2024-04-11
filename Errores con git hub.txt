@@ -1,0 +1,269 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS C:\Users\pc> cd .\Desktop\
+PS C:\Users\pc\Desktop> cd .\LABS_COMU2\
+PS C:\Users\pc\Desktop\LABS_COMU2> cd .\General\
+PS C:\Users\pc\Desktop\LABS_COMU2\General> cd .\labcomu2_2024_1\
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> ls
+
+
+    Directorio: C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      11/04/2024  2:40 p. m.                labcomu2_2024_1
+-a----      11/04/2024  2:36 p. m.              0 m.docx
+
+
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch
+  JuanM
+  juan2
+  juan3
+* juan4
+  main
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git fetch
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch -a
+  JuanM
+  juan2
+  juan3
+* juan4
+  main
+  remotes/origin/Bradlee
+  remotes/origin/Deybi
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/JuanM
+  remotes/origin/PRACTICA3
+  remotes/origin/Practica2_0
+  remotes/origin/Práctica-1
+  remotes/origin/Práctica_4
+  remotes/origin/brad
+  remotes/origin/bradlee3
+  remotes/origin/deiby2
+  remotes/origin/deiby3
+  remotes/origin/juan2
+  remotes/origin/juan3
+  remotes/origin/juan4
+  remotes/origin/main
+  remotes/origin/practica2
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git checkout juan3
+error: Your local changes to the following files would be overwritten by checkout:
+        labcomu2_2024_1
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch
+  JuanM
+  juan2
+  juan3
+* juan4
+  main
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git checkout juan3
+error: Your local changes to the following files would be overwritten by checkout:
+        labcomu2_2024_1
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git add .
+>> git commit -m "Guardando cambios antes de cambiar de rama"
+>>
+[juan4 7da890e] Guardando cambios antes de cambiar de rama
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch
+  JuanM
+  juan2
+  juan3
+* juan4
+  main
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git checkout juan3
+Switched to branch 'juan3'
+Your branch is up to date with 'origin/juan3'.
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> ls
+
+
+    Directorio: C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      11/04/2024  3:04 p. m.                GNU_RADIO
+d-----      11/04/2024  3:04 p. m.                INFORME3
+d-----      11/04/2024  3:04 p. m.                Lab3
+d-----      11/04/2024  3:04 p. m.                __pycache__
+
+
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git add .
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git commit -m "--"
+[juan3 14dabeb] --
+ 41 files changed, 3035 deletions(-)
+ delete mode 100644 LABT3/GNU_RADIO/gnu
+ delete mode 100644 LABT3/INFORME3/Ariza_Cardona_Castro.pdf
+ delete mode 100644 LABT3/INFORME3/informe
+ delete mode 100644 LABT3/Lab3/Archivos GNU/RF_EC_bpsk.grc
+ delete mode 100644 LABT3/Lab3/Archivos GNU/RF_EC_ook.grc
+ delete mode 100644 LABT3/Lab3/Archivos GNU/__pycache__/ook_epy_block_0.cpython-311.pyc
+ delete mode 100644 LABT3/Lab3/Archivos GNU/__pycache__/ook_epy_block_0_0.cpython-311.pyc
+ delete mode 100644 LABT3/Lab3/Archivos GNU/ook.py
+ delete mode 100644 LABT3/Lab3/Archivos GNU/ook_epy_block_0.py
+ delete mode 100644 LABT3/Lab3/Archivos GNU/ook_epy_block_0_0.py
+ delete mode 100644 LABT3/Lab3/Ariza_Cardona_Castro.pdf
+ delete mode 100644 LABT3/Lab3/Borrador_Avances.docx
+ delete mode 100644 LABT3/Lab3/Borrador_Bradlee.docx
+ delete mode 100644 LABT3/Lab3/Borrador_Deiby.docx
+ delete mode 100644 LABT3/Lab3/Borrador_Deiby2.docx
+ delete mode 100644 LABT3/Lab3/Borrador_Deiby3.docx
+ delete mode 100644 LABT3/Lab3/Borrador_Deiby4.docx
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Comportamiento FSK en el tiempo..png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Comportamiento en frecuencia se\303\261al FSK variando la desviaci\303\263n est\303\241ndar..png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Comportamiento en frecuencia se\303\261al FSK variando la frecuencia portadora..png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Comportamiento en frecuencia se\303\261al FSK..png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Comportamiento se\303\261al BPSK en el dominio del tiempo..png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Diagrama de constelaci\303\263n se\303\261al FSK.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Montaje para la modulaci\303\263n BPSK en versi\303\263n RF y EC.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/De \303\215tem 7 en adelante/Montaje se\303\261al modula FSK en versi\303\263n RF y EC.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/Otras preguntas de control/Comportamiento se\303\261al VCO RF en el tiempo.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/Otras preguntas de control/Modulaci\303\263n VCO RF.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/Punto 6/Descripci\303\263n bloque e_CE_VCO_fc.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/Punto 6/Descripci\303\263n bloque e_RF_VCO_ff.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/\303\215tem 5/Carrier freq 128K.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/\303\215tem 5/Carrier freq 512K.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/\303\215tem 5/Se\303\261al EC.png"
+ delete mode 100644 "LABT3/Lab3/Im\303\241genes para overleafe/\303\215tem 5/Se\303\261al RF.png"
+ delete mode 100644 LABT3/Lab3/Lab3_Comu_2.pdf
+ delete mode 100644 LABT3/Lab3/lab3
+ delete mode 100644 LABT3/Lab3/referencias.docx
+ delete mode 100644 LABT3/__pycache__/bloques_epy_block_2.cpython-311.pyc
+ delete mode 100644 LABT4/GNU_RADIO/gnu
+ delete mode 100644 "LABT4/INFORME_4/Aqu\303\255 va el informe 4"
+ delete mode 100644 "LABT4/Lab_4/Aqu\303\255 van los archivos relacionados a la pr\303\241ctica 4"
+ delete mode 100644 LABT4/__pycache__/bloques_epy_block_2.cpython-311.pyc
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git push
+To https://github.com/Juan2195551/labcomu2_2024_1.git
+ ! [rejected]        juan3 -> juan3 (fetch first)
+error: failed to push some refs to 'https://github.com/Juan2195551/labcomu2_2024_1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git pull origin juan3
+>>
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.70 KiB | 116.00 KiB/s, done.
+From https://github.com/Juan2195551/labcomu2_2024_1
+ * branch            juan3      -> FETCH_HEAD
+   0e91a86..ad8572b  juan3      -> origin/juan3
+Merge made by the 'ort' strategy.
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch
+  JuanM
+  juan2
+* juan3
+  juan4
+  main
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git add .
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git commit -m "."
+On branch juan3
+Your branch is ahead of 'origin/juan3' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git push
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 345 bytes | 172.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Juan2195551/labcomu2_2024_1.git
+   ad8572b..363d284  juan3 -> juan3
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch
+  JuanM
+  juan2
+* juan3
+  juan4
+  main
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch -a
+  JuanM
+  juan2
+* juan3
+  juan4
+  main
+  remotes/origin/Bradlee
+  remotes/origin/Deybi
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/JuanM
+  remotes/origin/PRACTICA3
+  remotes/origin/Practica2_0
+  remotes/origin/Práctica-1
+  remotes/origin/Práctica_4
+  remotes/origin/brad
+  remotes/origin/bradlee3
+  remotes/origin/deiby2
+  remotes/origin/deiby3
+  remotes/origin/juan2
+  remotes/origin/juan3
+  remotes/origin/juan4
+  remotes/origin/main
+  remotes/origin/practica2
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git fetch
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch -a
+  JuanM
+  juan2
+* juan3
+  juan4
+  main
+  remotes/origin/Bradlee
+  remotes/origin/Deybi
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/JuanM
+  remotes/origin/PRACTICA3
+  remotes/origin/Practica2_0
+  remotes/origin/Práctica-1
+  remotes/origin/Práctica_4
+  remotes/origin/brad
+  remotes/origin/bradlee3
+  remotes/origin/deiby2
+  remotes/origin/deiby3
+  remotes/origin/juan2
+  remotes/origin/juan3
+  remotes/origin/juan4
+  remotes/origin/main
+  remotes/origin/practica2
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git remote prune origin
+>>
+Pruning origin
+URL: https://github.com/Juan2195551/labcomu2_2024_1.git
+ * [pruned] origin/Bradlee
+ * [pruned] origin/Deybi
+ * [pruned] origin/JuanM
+ * [pruned] origin/Pr├íctica_4
+ * [pruned] origin/juan4
+ * [pruned] origin/practica2
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch
+  JuanM
+  juan2
+* juan3
+  juan4
+  main
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1> git branch -a
+  JuanM
+  juan2
+* juan3
+  juan4
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/PRACTICA3
+  remotes/origin/Practica2_0
+  remotes/origin/Práctica-1
+  remotes/origin/brad
+  remotes/origin/bradlee3
+  remotes/origin/deiby2
+  remotes/origin/deiby3
+  remotes/origin/juan2
+  remotes/origin/juan3
+  remotes/origin/main
+PS C:\Users\pc\Desktop\LABS_COMU2\General\labcomu2_2024_1>
